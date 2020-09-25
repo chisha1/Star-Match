@@ -1,6 +1,6 @@
 using System;
 
-namespace startmatch
+namespace starmatch
 {
     public class WeatherForecast
     {
