@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:starmatch/ClientApp/src/components/Game.js
 ﻿import React, { useState, useEffect } from 'react';
 import utils from "../math-utils"
 
@@ -103,3 +104,18 @@ const Game = props => {
 };
 
 export default Game;
+========
+﻿import React from 'react';
+import { useState } from 'react';
+import Game from "./Game";
+
+import '../CSS/star-match.css'
+
+const StarMatch = () => {
+    const [gameId, setGameId] = useState(1);
+    return <Game key={gameId} startNewGame={() => setGameId(gameId + 1)} />;
+}
+
+
+export default StarMatch;
+>>>>>>>> f98ca292f539d48aee0914aa4389ef83b82cac63:startmatch/ClientApp/src/components/StarMatch.js
